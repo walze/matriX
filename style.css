@@ -6,11 +6,11 @@
 
 body {
     overflow: hidden;
-    background: black;
+    background-image: linear-gradient(to top, #000000 0%, #16320a 100%);
 }
 
 canvas {
-    background: black;
+    background-image: linear-gradient(to top, #000000 0%, #16320a 100%);
     position: absolute;
     top: 0;
 }
