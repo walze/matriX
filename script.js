@@ -20,6 +20,12 @@ canvas.height = window.innerHeight;
 // innerWidth retorna a largura da viewport de layout da janela . 
 // A altura interior da janela—a altura da viewport de layout—pode ser obtida na innerHeightpropriedade.
 
+
+const lettersAndNum = "ﺖ	ﺚ	ﺪ	ﺫ	ﺮ	ﺯ	ﺲ	ﺶ	ﺺ	ﺽ	ﻄ	ﻅ	ﻞ	ﻦ ﺍ	ﺐ	ﺝ	ﺡ	ﺥ	ﻉ	ﻍ	ﻒ	ﻖ	ﻙ	ﻢ	ﻩ	ﻮ	ﻱ abcdefghijklmnopqrstuvxzyw123456789";
+const fontSize = 10;
+//pegando a largura e dividindo pelo tamnho dos itens para criar colunas
+const colunas = canvas.width/fontSize;
+
 class Caractere {
     constructor(){
 
