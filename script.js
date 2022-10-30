@@ -6,7 +6,7 @@
 // faz o retângulo verde. O método fillRect() coloca seu canto superior direito em (10, 10) e dá
 // a ele o tamanho de 150 unidades de largura e 100 de altura.
 
-const canvas = document.getElementById('canvas1');
+const canvas = document.getElementById('canvasMatrix');
 const ctx = canvas.getContext('2d');
 
 // ctx.fillStyle = 'green';
