@@ -19,3 +19,23 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 // innerWidth retorna a largura da viewport de layout da janela . 
 // A altura interior da janela—a altura da viewport de layout—pode ser obtida na innerHeightpropriedade.
+
+class Caractere {
+    constructor(){
+
+    }
+    draw(){
+
+    }
+}
+
+class Effect {
+    constructor(canvasWidth, canvasHeight){
+        this.canvasWidth = canvasWidth;
+        this.canvasHeight = canvasHeight;
+    }
+}
+
+function animacao(){
+
+}
