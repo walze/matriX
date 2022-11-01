@@ -13,6 +13,7 @@ gradient.addColorStop(1, "#0aff0a");
 const chars = Array.from({ length: 2 ** 16 }, (_, i) => i + 1)
   .map((i) => String.fromCharCode(i))
   .filter((a) => a.match(/\p{Alphabetic}/u))
+  .filter(Boolean)
   .join(" ");
 
 const random = () => crypto.getRandomValues(new Uint32Array(1))[0] / 2 ** 32;
@@ -81,7 +82,7 @@ function animate(timeStamp) {
     ctx.textAlign = "center";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = gradient; //'#0aff0a';
-    ctx.font = effect.fontSize + "px monospace"; //fonts have characters that occupy the same amount of horizontal space
+    ctx.font = effect.fontSize + "px Noto Sans"; //fonts have characters that occupy the same amount of horizontal space
     effect.symbols.forEach((simbolo) => simbolo.draw(ctx));
     timer = 0;
   } else {
